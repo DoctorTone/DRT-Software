@@ -1,0 +1,14 @@
+/* Styles for railway visualisations */
+body {
+    /* set margin to 0 and overflow to hidden, to go fullscreen */
+    margin: 0;
+    overflow: hidden;
+    color: white;
+    background-color: black;
+}
+.noDisplay {
+    display: none;
+}
+.centred {
+    text-align: center;
+}
