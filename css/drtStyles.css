@@ -12,3 +12,9 @@ body {
 .centred {
     text-align: center;
 }
+#imageContainer {
+    margin-top: 1%;
+}
+#imageContainer img {
+    width: 20%;
+}
