@@ -4,7 +4,10 @@ body {
     margin: 0;
     overflow: hidden;
     color: white;
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0.25);
+    background-image: url("../images/logoPage.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
 }
 .noDisplay {
     display: none;
