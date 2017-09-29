@@ -20,6 +20,32 @@ class Logo extends BaseApp {
         this.zoomingIn = false;
         this.zoomingOut = false;
         this.labelsVisible = false;
+        this.rotate = false;
+    }
+
+    createGUI() {
+        window.addEventListener('load', () => {
+            let appearanceConfig = {
+                Ground: '#0c245c'
+            };
+
+            let controlKit = new ControlKit();
+
+            controlKit.addPanel({width: 200})
+                .addGroup({label: "Appearance", enable: false})
+                .addColor(appearanceConfig, "Ground", {
+                    colorMode: "hex", onChange: () => {
+                        this.onGroundColourChanged(appearanceConfig.Ground);
+                    }
+                })
+        });
+    }
+
+    onGroundColourChanged(colour) {
+        let ground = this.getObjectByName('Ground');
+        if(ground) {
+            ground.material.color.setStyle(colour);
+        }
     }
 
     createScene() {
@@ -27,11 +53,12 @@ class Logo extends BaseApp {
         super.createScene();
 
         //Ground
-        let planeGeom = new THREE.PlaneBufferGeometry(5000, 5000, 16, 16);
+        let planeGeom = new THREE.PlaneBufferGeometry(5000, 15000, 16, 16);
         let planeMat = new THREE.MeshLambertMaterial( {color: 0x999999} );
         let plane = new THREE.Mesh(planeGeom, planeMat);
         plane.rotation.x = -Math.PI/2;
-        plane.position.y = -0.3;
+        plane.position.y = -0.275;
+        plane.name = "Ground";
         this.addToScene(plane);
 
         //Load in model
@@ -54,8 +81,17 @@ class Logo extends BaseApp {
             objLoader.load("DRT-Text.obj", object => {
                 object.rotation.x = -Math.PI/6;
                 this.addToScene(object);
+                this.object = object;
+                this.rotate = true;
             })
         });
+    }
+
+    update() {
+        super.update();
+        if(this.rotate) {
+            this.object.rotation.y += Math.PI/128;
+        }
     }
 }
 
@@ -65,7 +101,7 @@ $(document).ready( () => {
 
     let app = new Logo();
     app.init(container);
-    //app.createGUI();
+    app.createGUI();
     app.createScene();
 
 

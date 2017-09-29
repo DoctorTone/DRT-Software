@@ -120,19 +120,19 @@ class BaseApp {
         let ambientLight = new THREE.AmbientLight(0x383838);
         scene.add(ambientLight);
 
-        /*
+
          let directionalLight = new THREE.DirectionalLight( 0xffffff, 1.0 );
-         directionalLight.position.set( 0, 100, 0 );
+         directionalLight.position.set( -200, 100, 100 );
          directionalLight.name = "sunlight";
          scene.add( directionalLight );
-         */
 
 
+        /*
         let pointLight = new THREE.PointLight(0xffffff);
         pointLight.position.set(0,40,150);
         pointLight.name = 'PointLight';
         scene.add(pointLight);
-
+        */
 
         return this.scenes.length-1;
     }
@@ -146,7 +146,7 @@ class BaseApp {
     }
 
     createCamera() {
-        const CAM_X = 0, CAM_Y = 0, CAM_Z = 0.52;
+        const CAM_X = -2, CAM_Y = 4.4, CAM_Z = 10;
         const NEAR_PLANE = 0.01, FAR_PLANE = 100;
         this.defaultCamPos = new THREE.Vector3(CAM_X, CAM_Y, CAM_Z);
         this.camera = new THREE.PerspectiveCamera(45, this.container.clientWidth / window.innerHeight, NEAR_PLANE, FAR_PLANE );
@@ -164,7 +164,7 @@ class BaseApp {
 
         this.controls.keys = [ 65, 83, 68 ];
 
-        const LOOK_X = 0, LOOK_Y = 0, LOOK_Z = 0;
+        const LOOK_X = -4, LOOK_Y = -1.7, LOOK_Z = 1.7;
         let lookAt = new THREE.Vector3(LOOK_X, LOOK_Y, LOOK_Z);
         this.controls.setLookAt(lookAt);
     }
