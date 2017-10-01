@@ -39,3 +39,9 @@ body {
 #navigation img {
     width: 25%;
 }
+#introText {
+    margin-top: 5%;
+}
+.introduction {
+    font-size: 1.5vw;
+}
