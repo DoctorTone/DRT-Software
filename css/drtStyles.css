@@ -12,18 +12,18 @@ body {
 .centred {
     text-align: center;
 }
-#navigation {
+.navigation {
     margin-top: 3%;
 }
-#navigation ul {
+.navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-#navigation li {
+.navigation li {
     display: inline;
 }
-#navigation li a {
+.navigation li a {
     text-align: center;
     padding: 1%;
     text-decoration: none;
@@ -32,11 +32,11 @@ body {
     margin: 0 3.5%;
     /*border: 2px solid #808080;*/
 }
-#navigation li a img {
+.navigation li a img {
     width: 3.5%;
     padding: 0 5px;
 }
-#navigation img {
+.navigation img {
     width: 25%;
 }
 #introText {
