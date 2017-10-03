@@ -23,26 +23,37 @@ body {
     text-align: center;
     padding: 0%;
     text-decoration: none;
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     color: white;
     margin: 0 0%;
 }
 .navigation li a img {
-    width: 7.5%;
+    width: 8%;
     padding: 0 5px;
 }
 .navigation img {
     width: 35%;
 }
+#fp-nav ul li a span {
+    background-color: red;
+}
 #introText {
-    margin: 25% 0 50% 15%;
+    margin: 10% 0 12.5% 7.5%;
 }
 .introduction {
-    font-size: 3.5vw;
+    font-size: 5.5vw;
 }
-.section {
-    padding: 12.5% 5% 0 5%;
+.introduction p {
+    margin: 0;
+    padding: 0;
 }
+
 #logoContainer {
     margin-bottom: 5%;
+}
+#logoContainer img {
+    width: 45%;
+}
+#footer img {
+    width: 12.5%;
 }
