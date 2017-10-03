@@ -78,6 +78,9 @@ body {
     .navigation li a {
         font-size: 2.5vw;
     }
+    .navigation li img {
+        width: 25%;
+    }
     .navigation li a img {
         width: 5.5%;
         padding: 0 5px;
