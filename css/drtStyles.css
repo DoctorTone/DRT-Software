@@ -11,6 +11,14 @@ body {
 .centred {
     text-align: center;
 }
+.no-pad {
+    margin-right:0;
+    margin-left:0;
+}
+.no-pad > [class^="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
 .navigation ul {
     list-style-type: none;
     margin: 0;
@@ -47,7 +55,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.section {
+    padding-top: 3%;
+}
 #logoContainer {
     margin-bottom: 5%;
 }
@@ -56,4 +66,26 @@ body {
 }
 #footer img {
     width: 12.5%;
+}
+/* Media queries */
+@media (min-width: 568px) {
+    #logoContainer img {
+        width: 30%;
+    }
+    #logoContainer {
+        margin-bottom: 0.5%;
+    }
+    .navigation li a {
+        font-size: 2.5vw;
+    }
+    .navigation li a img {
+        width: 5.5%;
+        padding: 0 5px;
+    }
+    #introText {
+        margin: 0.5% 0 0.5% 7.5%;
+    }
+    .introduction {
+        font-size: 2.5vw;
+    }
 }
