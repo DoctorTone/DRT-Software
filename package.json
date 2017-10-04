@@ -1,0 +1,22 @@
+{
+  "name": "drt-software",
+  "version": "1.0.0",
+  "description": "Company website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoctorTone/DRT-Software.git"
+  },
+  "author": "Tony Glover",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DoctorTone/DRT-Software/issues"
+  },
+  "homepage": "https://github.com/DoctorTone/DRT-Software#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
