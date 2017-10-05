@@ -8,11 +8,11 @@
 
 $(document).ready(() => {
     $('#fullPage').fullpage({
-        anchors: ['home', 'about', 'demos', 'blog', 'contact'],
-        sectionsColor: ['#353535', '#1BBC9B', '#7E8F7C', '#808080', '#808080'],
+        anchors: ['home', 'about', 'demos', 'demos2', 'contact'],
+        sectionsColor: ['#353535', '#283ebc', '#8f3e35', '#8f3e35', '#825cae'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Home', 'About', 'Demos', 'Blog', 'Contact'],
+        navigationTooltips: ['Home', 'About', 'Demos', 'Demos2', 'Contact'],
         verticalCentered: false
     });
 });
