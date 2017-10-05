@@ -46,13 +46,13 @@ body {
     background-color: red;
 }
 #introText {
-    margin: 10% 0 12.5% 7.5%;
+    margin: 7.5% 0 12.5% 7.5%;
 }
 #detailText {
-    margin: 20% 7.5% 0 7.5%;
+    margin: 15% 7.5% 0 7.5%;
 }
 .introduction {
-    font-size: 8.5vw;
+    font-size: 10vw;
 }
 .introduction p {
     margin: 0 0 1% 0;
@@ -65,13 +65,19 @@ body {
     padding-top: 3%;
 }
 #logoContainer {
+    display: block;
+}
+#logoContainer {
     margin-bottom: 5%;
 }
 #logoContainer img {
-    width: 45%;
+    width: 42.5%;
 }
-#footer img {
-    width: 12.5%;
+#inlineImg {
+    display: none;
+}
+#footer {
+    margin-top: 5%;
 }
 .tight p {
     margin: 0;
@@ -79,27 +85,27 @@ body {
 }
 /* Media queries */
 @media (min-width: 568px) {
-    #logoContainer img {
-        width: 30%;
-    }
     #logoContainer {
-        margin-bottom: 0.5%;
+        display: none;
+    }
+    #inlineImg {
+        display: inline;
     }
     .navigation li a {
         font-size: 2.5vw;
     }
     .navigation li img {
-        width: 22.5%;
+        width: 20%;
     }
     .navigation li a img {
         width: 5.5%;
         padding: 0 5px;
     }
     #introText {
-        margin: 2% 0 0.5% 10%;
+        margin: 1% 0 0.5% 27.5%;
     }
     .introduction {
-        font-size: 4vw;
+        font-size: 5vw;
     }
     .introduction p {
         margin: 0 0 0% 0;
@@ -112,5 +118,108 @@ body {
     }
     .section {
         padding-top: 1%;
+    }
+    #footer {
+        margin-top: 2.5%;
+    }
+}
+@media (min-width: 568px) and (orientation: portrait) {
+    #logoContainer {
+        display: block;
+    }
+    #inlineImg {
+        display: none;
+    }
+    .introduction {
+        font-size: 8.5vw;
+    }
+    #introText {
+        margin: 10% 0 12.5% 7.5%;
+    }
+    .section {
+        padding-top: 3%;
+    }
+    .navigation li img {
+        width: 30%;
+    }
+    .navigation li a img {
+        width: 9%;
+        padding: 0 5px;
+    }
+    .explanation {
+        font-size: 2.5vw;
+    }
+}
+@media (min-width: 769px) {
+    .section {
+        padding-top: 1%;
+    }
+    .navigation li img {
+        width: 17.5%;
+    }
+    #introText {
+        margin: 1.5% 0 3.5% 30%;
+    }
+    .introduction {
+        font-size: 5vw;
+    }
+    #detailText {
+        text-align: center;
+    }
+    .explanation {
+        font-size: 1.5vw;
+    }
+    #footer {
+        margin-top: 4%;
+    }
+}
+@media (min-width: 992px) {
+    .section {
+        padding-top: 5%;
+    }
+    .navigation li img {
+        width: 20%;
+    }
+    .introduction {
+        font-size: 6vw;
+    }
+    #introText {
+        margin: 3% 0 3.5% 25%;
+    }
+}
+@media (min-width: 992px) and (orientation: portrait) {
+    .section {
+        padding-top: 3%;
+    }
+    .introduction {
+        font-size: 9vw;
+    }
+    #introText {
+        margin: 5% 0 3.5% 10%;
+    }
+    .explanation {
+        font-size: 2.5vw;
+    }
+}
+@media (min-width: 1200px) {
+    .section {
+        padding: 1%;
+    }
+    .navigation li img {
+        width: 15%;
+    }
+    .navigation li a img {
+        width: 3%;
+        padding: 0 5px;
+    }
+    .navigation li a {
+        font-size: 1.5vw;
+        margin: 0 2.5%;
+    }
+    .introduction {
+        font-size: 5vw;
+    }
+    #introText {
+        margin: 3% 0 3.5% 30%;
     }
 }

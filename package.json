@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/DoctorTone/DRT-Software#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "babel-preset-env": "^1.6.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0"
   }
 }
