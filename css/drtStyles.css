@@ -226,9 +226,9 @@ body {
 
 /* About section */
 #section1 {
-    background: -webkit-gradient(linear, top left, bottom left, from(#283ebc), to(#7c9eff));
-    background: -webkit-linear-gradient(#283ebc, #334FEF);
-    background: linear-gradient(#283ebc,#334FEF);
+    background: -webkit-gradient(linear, top left, bottom left, from(#283ebc), to(#637ecb));
+    background: -webkit-linear-gradient(#283ebc, #637ecb);
+    background: linear-gradient(#283ebc,#637ecb);
     padding: 10% 0 5% 0;
     font-size: 4vw;
 }
