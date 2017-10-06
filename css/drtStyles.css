@@ -223,3 +223,36 @@ body {
         margin: 3% 0 3.5% 30%;
     }
 }
+
+/* About section */
+#section1 {
+    padding: 2.5% 0 5% 0;
+    font-size: 1.5vw;
+}
+.header {
+    margin-bottom: 1%;
+}
+.header span {
+    font-size: 2vw;
+}
+.header img {
+    width: 3.5%;
+    border: 2px solid orange;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+/* Demos section */
+#section2 {
+    padding: 2.5% 0 5% 0;
+    font-size: 1.5vw;
+}
+.demos {
+    margin-left: 7.5%;
+}
+.demos div {
+    background-color: #2d6ca2;
+    height: 70vh;
+    margin: 0 2%;
+    border-radius: 30px;
+}
