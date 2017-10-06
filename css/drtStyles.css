@@ -61,7 +61,7 @@ body {
 .explanation {
     font-size: 4.5vw;
 }
-.section {
+#section0 {
     padding-top: 3%;
 }
 #logoContainer {
@@ -116,7 +116,7 @@ body {
     #detailText {
         margin: 1.5% 7.5% 0 20%;
     }
-    .section {
+    #section0 {
         padding-top: 1%;
     }
     #footer {
@@ -136,7 +136,7 @@ body {
     #introText {
         margin: 10% 0 12.5% 7.5%;
     }
-    .section {
+    #section0 {
         padding-top: 3%;
     }
     .navigation li img {
@@ -151,7 +151,7 @@ body {
     }
 }
 @media (min-width: 769px) {
-    .section {
+    #section0 {
         padding-top: 1%;
     }
     .navigation li img {
@@ -174,7 +174,7 @@ body {
     }
 }
 @media (min-width: 992px) {
-    .section {
+    #section0 {
         padding-top: 5%;
     }
     .navigation li img {
@@ -188,7 +188,7 @@ body {
     }
 }
 @media (min-width: 992px) and (orientation: portrait) {
-    .section {
+    #section0 {
         padding-top: 3%;
     }
     .introduction {
@@ -202,7 +202,7 @@ body {
     }
 }
 @media (min-width: 1200px) {
-    .section {
+    #section0 {
         padding: 1%;
     }
     .navigation li img {
@@ -223,6 +223,9 @@ body {
         margin: 3% 0 3.5% 30%;
     }
 }
+
+
+
 
 /* About section */
 #section1 {
@@ -247,6 +250,92 @@ body {
 .expand p {
     margin-bottom: 10%;
 }
+@media (min-width: 568px) {
+    #section1 {
+        padding-top: 1%;
+        font-size: 2.25vw;
+    }
+    .header {
+        margin-bottom: 1%;
+    }
+    .header span {
+        font-size: 3.25vw;
+    }
+    .header img {
+        width: 6.5%;
+    }
+    .expand p {
+        margin-bottom: 2.5%;
+    }
+    .container-fluid {
+        padding: 0;
+    }
+}
+@media (min-width: 568px) and (orientation: portrait) {
+    #section1 {
+        padding-top: 5%;
+        font-size: 4vw;
+    }
+    .header {
+        margin-bottom: 5%;
+    }
+    .header span {
+        font-size: 6vw;
+    }
+    .header img {
+        width: 12%;
+    }
+    .expand p {
+        margin-bottom: 7.5%;
+    }
+}
+@media (min-width: 768px) {
+    #section1 {
+        font-size: 3.25vw;
+    }
+    .header span {
+        font-size: 5vw;
+    }
+    .header img {
+        width: 10%;
+    }
+}
+@media (min-width: 992px) {
+    #section1 {
+        padding-top: 2%;
+        font-size: 2.25vw;
+    }
+    .header {
+        margin-bottom: 2.5%;
+    }
+    .expand p {
+        margin-bottom: 5%;
+    }
+    .header span {
+        font-size: 3.25vw;
+    }
+    .header img {
+        width: 6.5%;
+    }
+}
+@media (min-width: 992px) and (orientation: portrait) {
+    #section1 {
+        padding-top: 3%;
+        font-size: 3.25vw;
+    }
+    .header span {
+        font-size: 4.5vw;
+    }
+    .header img {
+        width: 10%;
+    }
+    .expand p {
+        margin-bottom: 8.5%;
+    }
+}
+
+
+
 /* Demos section */
 #section2 {
     padding: 2.5% 0 5% 0;
