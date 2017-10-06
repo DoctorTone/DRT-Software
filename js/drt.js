@@ -4,8 +4,6 @@
 
 //File for DRT Software Ltd
 
-
-
 $(document).ready(() => {
     $('#fullPage').fullpage({
         anchors: ['home','about','demos1','demos2','demos3','contact'],
@@ -14,5 +12,9 @@ $(document).ready(() => {
         navigationPosition: 'right',
         navigationTooltips: ['Home', 'About', 'Demos1', 'Demos2', 'Demos3', 'Contact'],
         verticalCentered: false
+    });
+
+    $('[id^="card"]').on("click", function() {
+        $(this).hasClass("flipped") === true ? $(this).removeClass("flipped") : $(this).addClass("flipped");
     });
 });

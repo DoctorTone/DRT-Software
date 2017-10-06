@@ -247,12 +247,56 @@ body {
     padding: 2.5% 0 5% 0;
     font-size: 1.5vw;
 }
-.demos {
+.offset {
     margin-left: 7.5%;
 }
-.demos div {
-    background-color: #2d6ca2;
-    height: 70vh;
+.offset div {
     margin: 0 2%;
+}
+.demos {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+
+    -ms-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+}
+.demos div {
+    background-color: #2c50a2;
+    height: 70vh;
     border-radius: 30px;
+}
+.front,
+.back {
+    width: 100%;
+}
+.front,
+.back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 1.0s;
+    transition: transform 1.0s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front {
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+.back {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.demos.flipped .front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.demos.flipped .back {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
 }
