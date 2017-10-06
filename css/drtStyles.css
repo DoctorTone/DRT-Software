@@ -226,22 +226,27 @@ body {
 
 /* About section */
 #section1 {
-    padding: 2.5% 0 5% 0;
-    font-size: 1.5vw;
+    background: -webkit-gradient(linear, top left, bottom left, from(#283ebc), to(#7c9eff));
+    background: -webkit-linear-gradient(#283ebc, #334FEF);
+    background: linear-gradient(#283ebc,#334FEF);
+    padding: 10% 0 5% 0;
+    font-size: 4vw;
 }
 .header {
-    margin-bottom: 1%;
+    margin-bottom: 6%;
 }
 .header span {
-    font-size: 2vw;
+    font-size: 6vw;
 }
 .header img {
-    width: 3.5%;
+    width: 15%;
     border: 2px solid orange;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 5px;
 }
-
+.expand p {
+    margin-bottom: 10%;
+}
 /* Demos section */
 #section2 {
     padding: 2.5% 0 5% 0;
