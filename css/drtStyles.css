@@ -454,7 +454,8 @@ body {
     .demos div {
         height: 60vh;
     }
-    .front p {
+    .front p,
+    .back p {
         font-size: 3vw;
         padding: 1%;
     }
