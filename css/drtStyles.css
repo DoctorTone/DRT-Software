@@ -434,6 +434,10 @@ body {
     left: 20%;
     bottom: 1%;
 }
+#economics {
+    background-image: url("../images/ftse.jpg");
+    background-size: 100% 100%;
+}
 @media (min-width: 568px) {
     #containerPortrait {
         display: none;
