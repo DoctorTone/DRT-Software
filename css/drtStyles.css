@@ -427,8 +427,11 @@ body {
     text-align: center;
     padding-top: 1%;
 }
-.front p:first-child {
-    margin-bottom: 35%;
+.clickInfo {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 1%;
 }
 @media (min-width: 568px) {
     #containerPortrait {
