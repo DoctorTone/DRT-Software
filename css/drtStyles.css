@@ -49,7 +49,7 @@ body {
     margin: 7.5% 0 12.5% 7.5%;
 }
 #detailText {
-    margin: 15% 7.5% 0 7.5%;
+    margin: 15% 5% 0 5%;
 }
 .introduction {
     font-size: 10vw;
@@ -62,7 +62,7 @@ body {
     font-size: 4.5vw;
 }
 #section0 {
-    padding-top: 3%;
+    padding-top: 5px;
 }
 #logoContainer {
     display: block;
@@ -76,8 +76,8 @@ body {
 #inlineImg {
     display: none;
 }
-#footer {
-    margin-top: 5%;
+#footer img {
+    width: 10%;
 }
 .tight p {
     margin: 0;
@@ -115,9 +115,6 @@ body {
     }
     #detailText {
         margin: 1.5% 7.5% 0 20%;
-    }
-    #section0 {
-        padding-top: 1%;
     }
     #footer {
         margin-top: 2.5%;
