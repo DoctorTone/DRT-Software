@@ -348,11 +348,11 @@ body {
 
 /* Demos section */
 #section2 {
-    padding: 1.5% 0 5% 0;
+    padding: 1.5% 0 0% 0;
     font-size: 5vw;
 }
 #section2 .header img {
-    width: 10%;
+    width: 12.5%;
 }
 #section2 .header span {
     font-size: 5vw;
@@ -382,7 +382,7 @@ body {
     -ms-transform-style: preserve-3d;
 }
 #containerLandscape .demos {
-    margin: 0 2%;
+    margin: 0 1.5%;
 }
 .demos div {
     height: 25vh;
@@ -423,6 +423,13 @@ body {
     -webkit-transform: rotateY(0);
     transform: rotateY(0);
 }
+.front p {
+    text-align: center;
+    padding-top: 1%;
+}
+.front p:first-child {
+    margin-bottom: 35%;
+}
 @media (min-width: 568px) {
     #containerPortrait {
         display: none;
@@ -434,12 +441,17 @@ body {
         font-size: 3.75vw;
     }
     #section2 .header img {
-        width: 7.5%;
+        width: 6.5%;
     }
-    .demos {
-        height: 50vh;
+    #section2 .header span {
+        font-size: 4vw;
     }
+    .demos,
     .demos div {
-        height: 50vh;
+        height: 60vh;
+    }
+    .front p {
+        font-size: 3vw;
+        padding: 1%;
     }
 }
