@@ -19,6 +19,11 @@ body {
     padding-right: 0;
     padding-left: 0;
 }
+
+/************************/
+/* Landing page section */
+/************************/
+
 .navigation ul {
     list-style-type: none;
     margin: 0;
@@ -218,15 +223,16 @@ body {
     }
 }
 
-
-
-
+/*****************/
 /* About section */
+/*****************/
+#section1 {
+    padding-top: 5px;
+}
 #section1 {
     background: -webkit-gradient(linear, top left, bottom left, from(#283ebc), to(#637ecb));
     background: -webkit-linear-gradient(#283ebc, #637ecb);
     background: linear-gradient(#283ebc,#637ecb);
-    padding: 10% 0 5% 0;
     font-size: 4vw;
 }
 .header {
@@ -246,7 +252,6 @@ body {
 }
 @media (min-width: 568px) {
     #section1 {
-        padding-top: 1%;
         font-size: 2.25vw;
     }
     .header {
@@ -264,7 +269,6 @@ body {
 }
 @media (min-width: 568px) and (orientation: portrait) {
     #section1 {
-        padding-top: 5%;
         font-size: 4vw;
     }
     .header {
@@ -293,7 +297,6 @@ body {
 }
 @media (min-width: 992px) {
     #section1 {
-        padding-top: 2%;
         font-size: 2.25vw;
     }
     .header {
@@ -311,7 +314,6 @@ body {
 }
 @media (min-width: 992px) and (orientation: portrait) {
     #section1 {
-        padding-top: 3%;
         font-size: 3.25vw;
     }
     .header span {
