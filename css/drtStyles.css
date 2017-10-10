@@ -116,9 +116,6 @@ body {
     #detailText {
         margin: 1.5% 7.5% 0 20%;
     }
-    #footer {
-        margin-top: 2.5%;
-    }
 }
 @media (min-width: 568px) and (orientation: portrait) {
     #logoContainer {
