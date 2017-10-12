@@ -1,8 +1,7 @@
 /* Styles for railway visualisations */
 body {
     /* set margin to 0 and overflow to hidden, to go fullscreen */
-    margin: 0;
-    overflow: hidden;
+    background-color: black;
     color: white;
 }
 .noDisplay {
@@ -23,7 +22,15 @@ body {
 /************************/
 /* Landing page section */
 /************************/
-
+#wrapper > div {
+    width: 100vw;
+    height: 400vh;
+}
+.section {
+    float: left;
+    width: 100%;
+    height: 100vh;
+}
 .navigation ul {
     list-style-type: none;
     margin: 0;
@@ -47,9 +54,6 @@ body {
 .navigation img {
     width: 35%;
 }
-#fp-nav ul li a span {
-    background-color: red;
-}
 #introText {
     margin: 7.5% 0 12.5% 7.5%;
 }
@@ -60,13 +64,14 @@ body {
     font-size: 10vw;
 }
 .introduction p {
-    margin: 0 0 1% 0;
+    margin: 0;
     padding: 0;
+    line-height: 120%;
 }
 .explanation {
     font-size: 4.5vw;
 }
-#section0 {
+#section1 {
     padding-top: 5px;
 }
 #logoContainer {
@@ -82,7 +87,7 @@ body {
     display: none;
 }
 #footer img {
-    width: 10%;
+    width: 8%;
 }
 .tight p {
     margin: 0;
@@ -100,7 +105,7 @@ body {
         font-size: 2.5vw;
     }
     .navigation li img {
-        width: 20%;
+        width: 17.5%;
     }
     .navigation li a img {
         width: 5.5%;
@@ -112,14 +117,20 @@ body {
     .introduction {
         font-size: 5vw;
     }
-    .introduction p {
-        margin: 0 0 0% 0;
-    }
     .explanation {
         font-size: 2vw;
     }
     #detailText {
-        margin: 1.5% 7.5% 0 20%;
+        position: relative;
+        margin-top: 2%;
+    }
+    #footer {
+        position: absolute;
+        top: 0;
+        right: 0%;
+    }
+    #footer img {
+        width: 35%;
     }
 }
 @media (min-width: 568px) and (orientation: portrait) {
@@ -135,7 +146,7 @@ body {
     #introText {
         margin: 10% 0 12.5% 7.5%;
     }
-    #section0 {
+    #section1 {
         padding-top: 3%;
     }
     .navigation li img {
@@ -150,7 +161,7 @@ body {
     }
 }
 @media (min-width: 769px) {
-    #section0 {
+    #section1 {
         padding-top: 1%;
     }
     .navigation li img {
@@ -173,7 +184,7 @@ body {
     }
 }
 @media (min-width: 992px) {
-    #section0 {
+    #section1 {
         padding-top: 5%;
     }
     .navigation li img {
@@ -187,7 +198,7 @@ body {
     }
 }
 @media (min-width: 992px) and (orientation: portrait) {
-    #section0 {
+    #section1 {
         padding-top: 3%;
     }
     .introduction {
@@ -201,7 +212,7 @@ body {
     }
 }
 @media (min-width: 1200px) {
-    #section0 {
+    #section1 {
         padding: 1%;
     }
     .navigation li img {
@@ -226,10 +237,10 @@ body {
 /*****************/
 /* About section */
 /*****************/
-#section1 {
+#section2 {
     padding-top: 5px;
 }
-#section1 {
+#section2 {
     background: -webkit-gradient(linear, top left, bottom left, from(#283ebc), to(#637ecb));
     background: -webkit-linear-gradient(#283ebc, #637ecb);
     background: linear-gradient(#283ebc,#637ecb);
@@ -251,7 +262,7 @@ body {
     margin-bottom: 10%;
 }
 @media (min-width: 568px) {
-    #section1 {
+    #section2 {
         font-size: 2.25vw;
     }
     .header {
@@ -268,7 +279,7 @@ body {
     }
 }
 @media (min-width: 568px) and (orientation: portrait) {
-    #section1 {
+    #section2 {
         font-size: 4vw;
     }
     .header {
@@ -285,7 +296,7 @@ body {
     }
 }
 @media (min-width: 768px) {
-    #section1 {
+    #section2 {
         font-size: 3.25vw;
     }
     .header span {
@@ -296,7 +307,7 @@ body {
     }
 }
 @media (min-width: 992px) {
-    #section1 {
+    #section2 {
         font-size: 2.25vw;
     }
     .header {
@@ -313,7 +324,7 @@ body {
     }
 }
 @media (min-width: 992px) and (orientation: portrait) {
-    #section1 {
+    #section2 {
         font-size: 3.25vw;
     }
     .header span {
@@ -327,7 +338,7 @@ body {
     }
 }
 @media (min-width: 1200px) {
-    #section1 {
+    #section2 {
         font-size: 1.75vw;
     }
     .header span {
@@ -342,14 +353,14 @@ body {
 /* Demos section */
 /*****************/
 
-#section2 {
+#section3 {
     padding: 1.5% 0 0% 0;
     font-size: 5vw;
 }
-#section2 .header img {
+#section3 .header img {
     width: 12.5%;
 }
-#section2 .header span {
+#section3 .header span {
     font-size: 5vw;
     padding-left: 5px;
 }
@@ -458,13 +469,13 @@ body {
     #containerLandscape {
         display: block;
     }
-    #section2 {
+    #section3 {
         font-size: 3.75vw;
     }
-    #section2 .header img {
+    #section3 .header img {
         width: 6.5%;
     }
-    #section2 .header span {
+    #section3 .header span {
         font-size: 4vw;
     }
     .demos,
@@ -481,13 +492,13 @@ body {
 /*******************/
 /* Contact section */
 /*******************/
-#section5 {
+#section4 {
     padding-top: 5px;
 }
-#section5 .header img {
+#section4 .header img {
     width: 12.5%;
 }
-#section5 .header span {
+#section4 .header span {
     font-size: 5vw;
     padding-left: 5px;
 }

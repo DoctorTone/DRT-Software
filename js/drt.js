@@ -4,17 +4,10 @@
 
 //File for DRT Software Ltd
 
-$(document).ready(() => {
-    $('#fullPage').fullpage({
-        anchors: ['home','about','demos1','demos2','demos3','contact'],
-        sectionsColor: ['#353535', '#283ebc', '#8f3e35', '#8f3e35', '#8f3e35','#825cae'],
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['Home', 'About', 'Demos1', 'Demos2', 'Demos3', 'Contact'],
-        verticalCentered: false
+document.addEventListener("DOMContentLoaded", () => {
+    const sweetScroll = new SweetScroll({
+        verticalScroll: true,           // Enable the vertical scroll
+        horizontalScroll: true,
+        outputLog: true
     });
-
-    $('[id^="card"]').on("click", function() {
-        $(this).hasClass("flipped") === true ? $(this).removeClass("flipped") : $(this).addClass("flipped");
-    });
-});
+}, false);
