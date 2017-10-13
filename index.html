@@ -8,7 +8,7 @@
     <title>DRT Software</title>
 
     <link rel="stylesheet" href="css/bootstrap.css?v=0.3">
-    <link href="css/drtStyles.css?v=0.6" rel="stylesheet" type="text/css">
+    <link href="css/drtStyles.css?v=0.7" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -19,7 +19,10 @@
 <body>
     <div id="wrapper">
         <div>
-            <div id="section1" class="section container-fluid">
+            <div id="home" class="section container-fluid">
+                <div class="navArrowDown">
+                    <a href="#about" data-scroll><img src="images/arrow-drop-downWhite.png"></a>
+                </div>
                 <div class="navigation">
                     <div id="logoContainer">
                         <img src="images/drtLogoWhite.png">
@@ -42,16 +45,18 @@
                         We build highly interactive graphical web applications.
                         No marketing, no branding, no fuss.
                     </p>
-                    <div id="footer" class="tight">
-                        <a href="#section2" data-scroll><img src="images/arrow-drop-downWhite.png"></a>
-                    </div>
-
                 </div>
             </div>
 
-            <div id="section2" class="section">
+            <div id="about" class="section">
+                <div class="navArrowUp">
+                    <a href="#home" data-scroll><img src="images/arrow-upWhite.png"></a>
+                </div>
+                <div class="navArrowDown">
+                    <a href="#demos" data-scroll><img src="images/arrow-drop-downWhite.png"></a>
+                </div>
                 <div class="container-fluid">
-                    <div class="header centred">
+                    <div class="header">
                         <img src="images/infoCropped.png">
                         <span>About</span>
                     </div>
@@ -65,15 +70,21 @@
                         </p>
                         <p>
                             I've visualised everything from brain activity to climate data and been privileged to work with a host of clients ranging
-                            from brain surgeons to artists to children with <a href="#section1" data-scroll>Aspergers</a> syndrome.
+                            from brain surgeons to artists to children with Aspergers syndrome.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div id="section3" class="section">
+            <div id="demos" class="section">
+                <div class="navArrowUp">
+                    <a href="#about" data-scroll><img src="images/arrow-upWhite.png"></a>
+                </div>
+                <div class="navArrowDown">
+                    <a href="#contact" data-scroll><img src="images/arrow-drop-downWhite.png"></a>
+                </div>
                 <div class="container-fluid">
-                    <div class="header centred">
+                    <div class="header">
                         <img src="images/mouseOrange.png">
                         <span>Demos</span>
                     </div>
@@ -206,7 +217,7 @@
                 </div>
             </div>
 
-            <div id="section4" class="section">
+            <div id="contact" class="section">
                 <div class="container-fluid">
                     <div class="header centred">
                         <img src="images/contact.png">

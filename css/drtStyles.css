@@ -1,7 +1,7 @@
 /* Styles for railway visualisations */
 body {
     /* set margin to 0 and overflow to hidden, to go fullscreen */
-    background-color: black;
+    background-color: #343434;
     color: white;
     overflow-x: hidden;
 }
@@ -36,9 +36,26 @@ body {
     height: 400vh;
 }
 .section {
+    position: relative;
     float: left;
     width: 100%;
     height: 100vh;
+}
+.navArrowUp,
+.navArrowDown {
+    position: absolute;
+    left: 45%;
+    width: 10%;
+}
+.navArrowUp {
+    top: -2.5%;
+}
+.navArrowDown {
+    bottom: 2.5%
+}
+.navArrowUp img,
+.navArrowDown img {
+    width: 100%;
 }
 /************************/
 /* Landing page section */
@@ -83,7 +100,7 @@ body {
 .explanation {
     font-size: 4.5vw;
 }
-#section1 {
+#home {
     padding-top: 5px;
 }
 #logoContainer {
@@ -158,7 +175,7 @@ body {
     #introText {
         margin: 10% 0 12.5% 7.5%;
     }
-    #section1 {
+    #home {
         padding-top: 3%;
     }
     .navigation li img {
@@ -173,7 +190,7 @@ body {
     }
 }
 @media (min-width: 769px) {
-    #section1 {
+    #home {
         padding-top: 1%;
     }
     .navigation li img {
@@ -196,7 +213,7 @@ body {
     }
 }
 @media (min-width: 992px) {
-    #section1 {
+    #home {
         padding-top: 5%;
     }
     .navigation li img {
@@ -210,7 +227,7 @@ body {
     }
 }
 @media (min-width: 992px) and (orientation: portrait) {
-    #section1 {
+    #home {
         padding-top: 3%;
     }
     .introduction {
@@ -224,7 +241,7 @@ body {
     }
 }
 @media (min-width: 1200px) {
-    #section1 {
+    #home {
         padding: 1%;
     }
     .navigation li img {
@@ -249,20 +266,18 @@ body {
 /*****************/
 /* About section */
 /*****************/
-#section2 {
+#about {
     padding-top: 5px;
 }
-#section2 {
-    background: -webkit-gradient(linear, top left, bottom left, from(#283ebc), to(#637ecb));
-    background: -webkit-linear-gradient(#283ebc, #637ecb);
-    background: linear-gradient(#283ebc,#637ecb);
+#about {
     font-size: 4vw;
 }
 .header {
     margin-bottom: 3%;
 }
-.header span {
-    font-size: 6vw;
+#about .header span {
+    font-size: 4vw;
+    padding-left: 5px;
 }
 .header img {
     width: 15%;
@@ -274,7 +289,7 @@ body {
     margin-bottom: 10%;
 }
 @media (min-width: 568px) {
-    #section2 {
+    #about {
         font-size: 2.25vw;
     }
     .header {
@@ -291,7 +306,7 @@ body {
     }
 }
 @media (min-width: 568px) and (orientation: portrait) {
-    #section2 {
+    #about {
         font-size: 4vw;
     }
     .header {
@@ -308,7 +323,7 @@ body {
     }
 }
 @media (min-width: 768px) {
-    #section2 {
+    #about {
         font-size: 3.25vw;
     }
     .header span {
@@ -319,7 +334,7 @@ body {
     }
 }
 @media (min-width: 992px) {
-    #section2 {
+    #about {
         font-size: 2.25vw;
     }
     .header {
@@ -336,7 +351,7 @@ body {
     }
 }
 @media (min-width: 992px) and (orientation: portrait) {
-    #section2 {
+    #about {
         font-size: 3.25vw;
     }
     .header span {
@@ -350,7 +365,7 @@ body {
     }
 }
 @media (min-width: 1200px) {
-    #section2 {
+    #about {
         font-size: 1.75vw;
     }
     .header span {
@@ -365,14 +380,14 @@ body {
 /* Demos section */
 /*****************/
 
-#section3 {
+#demos {
     padding: 1.5% 0 0% 0;
     font-size: 5vw;
 }
-#section3 .header img {
+#demos .header img {
     width: 12.5%;
 }
-#section3 .header span {
+#demos .header span {
     font-size: 5vw;
     padding-left: 5px;
 }
@@ -481,13 +496,13 @@ body {
     #containerLandscape {
         display: block;
     }
-    #section3 {
+    #demos {
         font-size: 3.75vw;
     }
-    #section3 .header img {
+    #demos .header img {
         width: 6.5%;
     }
-    #section3 .header span {
+    #demos .header span {
         font-size: 4vw;
     }
     .demos,
@@ -504,13 +519,13 @@ body {
 /*******************/
 /* Contact section */
 /*******************/
-#section4 {
+#contact {
     padding-top: 5px;
 }
-#section4 .header img {
+#contact .header img {
     width: 12.5%;
 }
-#section4 .header span {
+#contact .header span {
     font-size: 5vw;
     padding-left: 5px;
 }
