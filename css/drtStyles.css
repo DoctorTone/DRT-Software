@@ -17,6 +17,9 @@ body {
     padding-right: 0;
     padding-left: 0;
 }
+#fp-nav ul li a span {
+    background-color: red;
+}
 /*
 ::-webkit-scrollbar {
     width: 6px;
@@ -79,7 +82,10 @@ body {
     margin: 7.5% 0 12.5% 7.5%;
 }
 #detailText {
-    margin: 15% 5% 0 5%;
+    margin-top: 0.5%;
+}
+#detailText img {
+    width: 10%;
 }
 .introduction {
     font-size: 10vw;
@@ -140,10 +146,6 @@ body {
     }
     .explanation {
         font-size: 2vw;
-    }
-    #detailText {
-        position: relative;
-        margin-top: 2.75%;
     }
     #footer {
         position: absolute;
@@ -258,10 +260,11 @@ body {
 /*****************/
 /* About section */
 /*****************/
-#about {
-    padding-top: 5px;
+#about .fp-tableCell {
+    display: block;
 }
 #about {
+    padding-top: 10px;
     font-size: 4vw;
 }
 .header {
@@ -282,7 +285,7 @@ body {
 }
 @media (min-width: 568px) {
     #about {
-        font-size: 2.25vw;
+        font-size: 2.5vw;
     }
     .header {
         margin-bottom: 1%;
