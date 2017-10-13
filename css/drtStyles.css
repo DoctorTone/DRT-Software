@@ -20,6 +20,13 @@ body {
 #fp-nav ul li a span {
     background-color: red;
 }
+.fp-controlArrow.fp-prev
+{
+    left: 30px;
+}
+.fp-controlArrow.fp-next {
+    right: 30px;
+}
 /*
 ::-webkit-scrollbar {
     width: 6px;
@@ -374,8 +381,11 @@ body {
 /*****************/
 /* Demos section */
 /*****************/
+#demos .fp-tableCell {
+    display: block;
+}
 #demos {
-    padding: 1.5% 0 0% 0;
+    padding-top: 10px;
     font-size: 5vw;
 }
 #demos .header img {

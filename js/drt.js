@@ -10,7 +10,8 @@ $(document).ready( () => {
         anchors: ["page1", "page2", "page3", "page4"],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Home', 'About','Demos', 'Contact']
+        navigationTooltips: ['Home', 'About','Demos', 'Contact'],
+        slidesNavigation: true
     })
 });
 
