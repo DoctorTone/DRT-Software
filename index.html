@@ -8,226 +8,92 @@
     <title>DRT Software</title>
 
     <link rel="stylesheet" href="css/bootstrap.css?v=0.3">
-    <link href="css/drtStyles.css?v=0.7" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/fullPage.css?v=0.4">
+    <link href="css/drtStyles.css?v=0.4" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/sweet-scroll.js"></script>
-    <script type="text/javascript" src="js/drt.js?v=0.4"></script>
+    <script type="text/javascript" src="js/fullPage.js"></script>
+    <script type="text/javascript" src="js/drt.js?v=0.7"></script>
 
 </head>
 <body>
-    <div id="wrapper">
-        <div>
-            <div id="home" class="section container-fluid">
-                <div class="navArrowDown">
-                    <a href="#about" data-scroll><img src="images/arrow-drop-downWhite.png"></a>
+    <div id="fullpage">
+        <div id="home" class="section container-fluid">
+            <div class="navigation">
+                <div id="logoContainer">
+                    <img src="images/drtLogoWhite.png">
                 </div>
-                <div class="navigation">
-                    <div id="logoContainer">
-                        <img src="images/drtLogoWhite.png">
-                    </div>
-                    <ul class="centred">
-                        <li id="inlineImg"><img src="images/drtLogoWhite.png"></li>
-                        <li><a href="#about"><img src="images/info.png">About</a></li>
-                        <li><a href="#demos"><img src="images/mouseOrange.png">Demos</a></li>
-                        <li><a href="#blog"><img src="images/blogProper.png">Blog</a></li>
-                        <li><a href="#contact"><img src="images/contact.png">Contact</a></li>
-                    </ul>
+                <ul class="centred">
+                    <li id="inlineImg"><img src="images/drtLogoWhite.png"></li>
+                    <li><a href="#about"><img src="images/info.png">About</a></li>
+                    <li><a href="#demos"><img src="images/mouseOrange.png">Demos</a></li>
+                    <li><a href="#blog"><img src="images/blogProper.png">Blog</a></li>
+                    <li><a href="#contact"><img src="images/contact.png">Contact</a></li>
+                </ul>
+            </div>
+            <div id="introText" class="introduction">
+                <p>Visualisations.</p>
+                <p>Interactive graphics.</p>
+                <p>Welcome to DRT.</p>
+            </div>
+            <div id="detailText" class="explanation tight centred">
+                <p>
+                    We build highly interactive graphical web applications.
+                    No marketing, no branding, no fuss.
+                </p>
+            </div>
+        </div>
+
+        <div id="about" class="section">
+            <div class="container-fluid">
+                <div class="header">
+                    <img src="images/infoCropped.png">
+                    <span>About</span>
                 </div>
-                <div id="introText" class="introduction">
-                    <p>Visualisations.</p>
-                    <p>Interactive graphics.</p>
-                    <p>Welcome to DRT.</p>
-                </div>
-                <div id="detailText" class="explanation tight centred">
+                <div class="centred">
                     <p>
-                        We build highly interactive graphical web applications.
-                        No marketing, no branding, no fuss.
+                        Welcome, my name is Dr. Tony Glover and I am the founder of DRT Software. I've been a software developer for over 25 years.
+                    </p>
+                    <p>
+                        I use the web to do visualisation, simulation, virtual and augmented reality, learning environments, graphical tools and interfaces, as well as
+                        consultancy services.
+                    </p>
+                    <p>
+                        I've visualised everything from brain activity to climate data and been privileged to work with a host of clients ranging
+                        from brain surgeons to artists to children with Aspergers syndrome.
                     </p>
                 </div>
             </div>
+        </div>
 
-            <div id="about" class="section">
-                <div class="navArrowUp">
-                    <a href="#home" data-scroll><img src="images/arrow-upWhite.png"></a>
-                </div>
-                <div class="navArrowDown">
-                    <a href="#demos" data-scroll><img src="images/arrow-drop-downWhite.png"></a>
-                </div>
-                <div class="container-fluid">
-                    <div class="header">
-                        <img src="images/infoCropped.png">
-                        <span>About</span>
-                    </div>
-                    <div class="centred">
-                        <p>
-                            Welcome, my name is Dr. Tony Glover and I am the founder of DRT Software. I've been a software developer for over 25 years.
-                        </p>
-                        <p>
-                            I use the web to do visualisation, simulation, virtual and augmented reality, learning environments, graphical tools and interfaces, as well as
-                            consultancy services.
-                        </p>
-                        <p>
-                            I've visualised everything from brain activity to climate data and been privileged to work with a host of clients ranging
-                            from brain surgeons to artists to children with Aspergers syndrome.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="demos" class="section">
-                <div class="navArrowUp">
-                    <a href="#about" data-scroll><img src="images/arrow-upWhite.png"></a>
-                </div>
-                <div class="navArrowDown">
-                    <a href="#contact" data-scroll><img src="images/arrow-drop-downWhite.png"></a>
-                </div>
+        <div id="demos" class="section">
+            <div class="slide">
                 <div class="container-fluid">
                     <div class="header">
                         <img src="images/mouseOrange.png">
                         <span>Demos</span>
                     </div>
-                    <div id="containerPortrait">
-                        <div class="row">
-                            <div class="col-xxs-2">
+                    <p>These are some <a href="#demoContainer">demos</a></p>
 
-                            </div>
-                            <div id="cardPortrait0" class="col-xxs-8 demos">
-                                <div id="economicsPortrait" class="front">
-                                    <p class="clickInfo top">
-                                        Economic Data
-                                    </p>
-                                    <p class="clickInfo bottom">
-                                        Click for info
-                                    </p>
-                                </div>
-                                <div class="back">
-                                    <p>
-                                        Visualisation of FTSE-100 data for 2016.
-                                    </p>
-                                    <button class="clickInfo bottom btn btn-warning">Go to Demo</button>
-                                </div>
-                            </div>
-                            <div class="col-xxs-2">
-
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xxs-2">
-
-                            </div>
-                            <div id="cardPortrait1" class="col-xxs-8 demos">
-                                <div id="pointsPortrait" class="front">
-                                    <p class="clickInfo top">
-                                        Point clouds
-                                    </p>
-                                    <p class="clickInfo bottom">
-                                        Click for info
-                                    </p>
-                                </div>
-                                <div class="back">
-                                    <p>
-                                        Visualisation of large datasets.
-                                    </p>
-                                    <button class="clickInfo bottom btn btn-warning">Go to Demo</button>
-                                </div>
-                            </div>
-                            <div class="col-xxs-2">
-
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xxs-2">
-
-                            </div>
-                            <div id="cardPortrait2" class="col-xxs-8 demos">
-                                <div id="timeVizPortrait" class="front">
-                                    <p class="clickInfo top">
-                                        Time varying data
-                                    </p>
-                                    <p class="clickInfo bottom">
-                                        Click for info
-                                    </p>
-                                </div>
-                                <div class="back">
-                                    <p>
-                                        Related strands of data varying over time.
-                                    </p>
-                                    <button class="clickInfo bottom btn btn-warning">Go to Demo</button>
-                                </div>
-                            </div>
-                            <div class="col-xxs-2">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div id="containerLandscape">
-                        <div class="row offset">
-                            <div id="cardLandscape0" class="col-xs-3 demos">
-                                <div id="economicsLandscape" class="front">
-                                    <p class="clickInfo top">
-                                        Economic Data
-                                    </p>
-                                    <p class="clickInfo bottom">
-                                        Click for info
-                                    </p>
-                                </div>
-                                <div class="back">
-                                    <p>
-                                        Visualisation of FTSE-100 data for 2016.
-                                    </p>
-                                    <button class="clickInfo btn btn-warning">Go to Demo</button>
-                                </div>
-                            </div>
-                            <div id="cardLandscape1" class="col-xs-3 demos">
-                                <div id="pointsLandscape" class="front">
-                                    <p class="clickInfo top">
-                                        Point clouds
-                                    </p>
-                                    <p class="clickInfo bottom">
-                                        Click for info
-                                    </p>
-                                </div>
-                                <div class="back">
-                                    <p>
-                                        Visualisation of large datasets.
-                                    </p>
-                                    <button class="clickInfo btn btn-warning">Go to Demo</button>
-                                </div>
-                            </div>
-                            <div id="cardLandscape2" class="col-xs-3 demos">
-                                <div id="timeVizLandscape" class="front">
-                                    <p class="clickInfo top">
-                                        Time-varying data
-                                    </p>
-                                    <p class="clickInfo bottom">
-                                        Click for info
-                                    </p>
-                                </div>
-                                <div class="back">
-                                    <p>
-                                        Related strands of data varying over time.
-                                    </p>
-                                    <button class="clickInfo btn btn-warning">Go to Demo</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
-            <div id="contact" class="section">
-                <div class="container-fluid">
-                    <div class="header centred">
-                        <img src="images/contact.png">
-                        <span>Contact</span>
-                    </div>
-                    <div id="credits">
-                        <p>
-                            Thank you for visiting the site. Please get in touch to see how we can create your next project.
-                        </p>
-                    </div>
+            <div class="slide">
+                <p>Another slide</p>
+            </div>
+        </div>
+
+        <div id="contact" class="section">
+            <div class="container-fluid">
+                <div class="header">
+                    <img src="images/contact.png">
+                    <span>Contact</span>
+                </div>
+                <div id="credits">
+                    <p>
+                        Thank you for visiting the site. Please get in touch to see how we can create your next project.
+                    </p>
                 </div>
             </div>
         </div>

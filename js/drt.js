@@ -4,10 +4,13 @@
 
 //File for DRT Software Ltd
 
-document.addEventListener("DOMContentLoaded", () => {
-    const sweetScroll = new SweetScroll({
-        verticalScroll: true,           // Enable the vertical scroll
-        horizontalScroll: true,
-        outputLog: true
-    });
-}, false);
+$(document).ready( () => {
+    $("#fullpage").fullpage( {
+        sectionsColor: ['#494949', '#494949', '#494949', '#494949'],
+        anchors: ["page1", "page2", "page3", "page4"],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['firstSlide', 'secondSlide','firstSlide', 'secondSlide']
+    })
+});
+
