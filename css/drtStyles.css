@@ -17,15 +17,23 @@ body {
     padding-right: 0;
     padding-left: 0;
 }
+#fp-nav.right {
+    right: 2px;
+}
 #fp-nav ul li a span {
     background-color: red;
 }
+.fp-controlArrow {
+    top: 25%;
+}
 .fp-controlArrow.fp-prev
 {
-    left: 30px;
+    left: 10px;
+    border-width: 28.5px 24px 28.5px 0;
 }
 .fp-controlArrow.fp-next {
-    right: 30px;
+    right: 10px;
+    border-width: 28.5px 0 28.5px 24px;
 }
 /*
 ::-webkit-scrollbar {
@@ -74,13 +82,13 @@ body {
     text-align: center;
     padding: 0%;
     text-decoration: none;
-    font-size: 4.5vw;
+    font-size: 5vw;
     color: white;
     margin: 0 0%;
 }
 .navigation li a img {
-    width: 8%;
-    padding: 0 5px;
+    width: 8.5%;
+    padding: 0 3px;
 }
 .navigation img {
     width: 35%;
@@ -104,9 +112,6 @@ body {
 }
 .explanation {
     font-size: 4.5vw;
-}
-#home {
-    padding-top: 5px;
 }
 #logoContainer {
     display: block;
@@ -265,21 +270,11 @@ body {
 }
 
 /*****************/
-/* About section */
+/* Common styles */
 /*****************/
-#about .fp-tableCell {
-    display: block;
-}
-#about {
-    padding-top: 10px;
-    font-size: 4vw;
-}
 .header {
-    margin-bottom: 3%;
-}
-#about .header span {
-    font-size: 4vw;
-    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5%;
 }
 .header img {
     width: 15%;
@@ -287,7 +282,21 @@ body {
     border-radius: 10px;
     padding: 5px;
 }
-.expand p {
+.header span {
+    font-size: 6vw;
+    padding-left: 5px;
+}
+.mainFont {
+    font-size: 4.5vw;
+}
+
+/*****************/
+/* About section */
+/*****************/
+#about .fp-tableCell {
+    display: block;
+}
+#about p {
     margin-bottom: 10%;
 }
 @media (min-width: 568px) {
@@ -384,16 +393,14 @@ body {
 #demos .fp-tableCell {
     display: block;
 }
-#demos {
-    padding-top: 10px;
-    font-size: 5vw;
+.demoText {
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-right: auto;
+    margin-left: auto;
 }
-#demos .header img {
-    width: 12.5%;
-}
-#demos .header span {
-    font-size: 5vw;
-    padding-left: 5px;
+.demoText p {
+    margin-bottom: 15%;
 }
 #containerPortrait {
     display: block;
@@ -529,15 +536,15 @@ body {
 #contact .fp-tableCell {
     display: block;
 }
-#contact {
-    padding-top: 10px;
+#credits {
+    margin-bottom: 10%;
 }
-#contact .header img {
-    width: 12.5%;
+#credits img {
+    width: 25%;
 }
-#contact .header span {
-    font-size: 5vw;
-    padding-left: 5px;
+.mediaContacts img {
+    width: 25%;
+    margin-right: 2.5%;
 }
 @media (min-width: 568px) {
     #contact {
@@ -557,6 +564,5 @@ body {
         width: 40%;
     }
     #credits p {
-        margin-top: 3%;
-    }
+        margin-top: 3%;  }
 }
