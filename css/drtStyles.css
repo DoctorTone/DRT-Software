@@ -150,6 +150,9 @@ body {
         width: 5.5%;
         padding: 0 5px;
     }
+    #menu {
+        text-align: center;
+    }
     #introText {
         margin: 1% 0 0.5% 27.5%;
     }
@@ -289,6 +292,27 @@ body {
 .mainFont {
     font-size: 4.5vw;
 }
+@media (min-width: 568px) {
+    .mainFont {
+        font-size: 2.5vw;
+    }
+    .header {
+        margin-bottom: 1%;
+    }
+    .header span {
+        font-size: 3.25vw;
+    }
+    .header img {
+        width: 6.5%;
+    }
+    .fp-controlArrow {
+        top: 35%;
+    }
+}
+
+
+
+
 
 /*****************/
 /* About section */
@@ -300,17 +324,8 @@ body {
     margin-bottom: 10%;
 }
 @media (min-width: 568px) {
-    #about {
-        font-size: 2.5vw;
-    }
-    .header {
-        margin-bottom: 1%;
-    }
-    .header span {
-        font-size: 3.25vw;
-    }
-    .header img {
-        width: 6.5%;
+    #about p {
+        margin-bottom: 3.5%;
     }
     .expand p {
         margin-bottom: 2.5%;
@@ -507,15 +522,6 @@ body {
     #containerLandscape {
         display: block;
     }
-    #demos {
-        font-size: 2.75vw;
-    }
-    #demos .header img {
-        width: 6.5%;
-    }
-    #demos .header span {
-        font-size: 4vw;
-    }
     .demos,
     .demos div {
         height: 60vh;
@@ -525,8 +531,8 @@ body {
         font-size: 3vw;
         padding: 1%;
     }
-    #demoText {
-        margin: 5% 10% 0 10%;
+    .demoText p {
+        margin-bottom: 7.5%;
     }
 }
 
@@ -547,18 +553,12 @@ body {
     margin-right: 2.5%;
 }
 @media (min-width: 568px) {
-    #contact {
-        font-size: 2.75vw;
-    }
-    #contact .header img {
-        width: 6.5%;
-    }
-    #contact .header span {
-        font-size: 4vw;
-    }
     .mediaContacts img {
         width: 10%;
         margin-right: 10%;
+    }
+    #credits {
+        margin-bottom: 5%;
     }
     #credits img {
         width: 40%;
