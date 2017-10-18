@@ -12,6 +12,10 @@ $(document).ready( () => {
         navigationPosition: 'right',
         navigationTooltips: ['Home', 'About','Demos', 'Contact'],
         slidesNavigation: true
-    })
+    });
+
+    $('[id^="card"]').on("click", function() {
+        $(this).hasClass("flipped") === true ? $(this).removeClass("flipped") : $(this).addClass("flipped");
+    });
 });
 

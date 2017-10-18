@@ -9,9 +9,18 @@ body {
 .centred {
     text-align: center;
 }
-.no-pad {
-    margin-right:0;
-    margin-left:0;
+.autoCentre {
+    margin-right: auto;
+    margin-left: auto;
+}
+.indent {
+    margin: 0 2%;
+}
+.three-tenths {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    width: 30%;
 }
 .no-pad > [class^="col-"] {
     padding-right: 0;
@@ -386,8 +395,8 @@ body {
 #containerLandscape {
     display: none;
 }
-.offset {
-    margin-left: 5%;
+#containerPortrait .row {
+    margin-bottom: 2%;
 }
 .demos {
     position: relative;
@@ -403,20 +412,17 @@ body {
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
 }
-#containerLandscape .demos {
-    margin: 0 1.5%;
+#demo1 .header {
+    margin-bottom: 0;
 }
 .demos div {
     height: 25vh;
     background-color: #2c50a2;
     border-radius: 30px;
 }
-.row {
-    margin-bottom: 3%;
-}
 .front,
 .back {
-    width: 100%;
+    width: 95%;
 }
 .front,
 .back {
