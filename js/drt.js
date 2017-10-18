@@ -11,7 +11,7 @@ $(document).ready( () => {
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['Home', 'About','Demos', 'Contact'],
-        slidesNavigation: true
+        slidesNavigation: false
     });
 
     $('[id^="card"]').on("click", function() {

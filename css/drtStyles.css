@@ -161,6 +161,9 @@ body {
     #introText {
         margin: 10% 0 12.5% 7.5%;
     }
+    .navigation li a {
+        font-size: 4vw;
+    }
     .navigation li img {
         width: 30%;
     }
@@ -169,13 +172,10 @@ body {
         padding: 0 5px;
     }
     .explanation {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
 }
 @media (min-width: 768px) {
-    #logoContainer img {
-        width: 40%;
-    }
     .navigation li img {
         width: 17.5%;
     }
@@ -196,6 +196,23 @@ body {
     }
     #footer {
         margin-top: 4%;
+    }
+}
+@media (min-width: 768px) and (orientation: landscape) {
+    .navigation li a {
+        font-size: 2vw;
+    }
+    .introduction {
+        font-size: 6vw;
+    }
+    #introText {
+        margin: 2.5% 0 0% 25%;
+    }
+    #detailText {
+        margin-top: 0;
+    }
+    .explanation {
+        font-size: 1.5vw;
     }
 }
 @media (min-width: 992px) {
@@ -305,8 +322,17 @@ body {
         width: 10%;
     }
 }
-
-
+@media (min-width: 768px) and (orientation: landscape) {
+    .header span {
+        font-size: 4vw;
+    }
+    .header img {
+        width: 7.5%;
+    }
+    .mainFont {
+        font-size: 2.25vw;
+    }
+}
 
 
 /*****************/
@@ -330,6 +356,9 @@ body {
     .expand p {
         margin-bottom: 7.5%;
     }
+}
+@media (min-width: 768px) and (orientation: landscape) {
+
 }
 @media (min-width: 992px) {
     .mainFont {
@@ -534,6 +563,15 @@ body {
     #credits p {
         margin-top: 3%;  }
 }
+@media (min-width: 568px) and (orientation: portrait) {
+    .mediaContacts img {
+        width: 15%;
+        margin-right: 10%;
+    }
+    #credits {
+        margin-bottom: 15%;
+    }
+}
 @media (min-width: 768px) {
     .mediaContacts {
         margin-top: 10%;
@@ -543,9 +581,18 @@ body {
         margin-right: 10%;
     }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) and (orientation: landscape) {
+    .mediaContacts {
+        margin-top: 2%;
+    }
     .mediaContacts img {
         width: 10%;
+        margin-right: 10%;
+    }
+}
+@media (min-width: 992px) {
+    .mediaContacts img {
+        width: 8.5%;
         margin-right: 10%;
     }
 }
