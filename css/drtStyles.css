@@ -595,14 +595,26 @@ body {
     display: block;
 }
 #credits {
-    margin-bottom: 10%;
+    margin-bottom: 3.5%;
 }
 #credits img {
     width: 25%;
 }
+#credits img:first-child {
+    margin-right: 15%;
+}
 .mediaContacts img {
-    width: 25%;
+    width: 20%;
     margin-right: 2.5%;
+}
+#address {
+    margin-top: 3%;
+}
+#address p {
+    font-size: 4vw;
+}
+#address img {
+    width: 12.5%;
 }
 @media (min-width: 568px) {
     .mediaContacts img {
