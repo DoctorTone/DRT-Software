@@ -407,8 +407,15 @@ body {
     }
 }
 @media (min-width: 1200px) {
+    #about .header {
+        margin-left: 3%;
+        margin-top: 1%;
+    }
     #about p {
         margin-bottom: 8%;
+    }
+    .extraAbout {
+        display: inline;
     }
 }
 /*****************/
@@ -564,6 +571,21 @@ body {
 @media (min-width: 1200px) {
     .demoText {
         text-align: left;
+    }
+    #demos .header {
+        margin-left: 3%;
+        margin-top: 1%;
+        margin-bottom: 5%;
+
+    }
+    .demoText {
+        padding-right: 17.5%;
+        padding-left: 17.5%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .demoExtra {
+        display: block;
     }
 }
 /*******************/
