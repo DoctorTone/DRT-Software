@@ -239,14 +239,14 @@ body {
 }
 @media (min-width: 1200px) {
     .navigation li img {
-        width: 15%;
+        width: 17.5%;
     }
     .navigation li a img {
-        width: 3%;
+        width: 4%;
         padding: 0 5px;
     }
     .navigation li a {
-        font-size: 1.5vw;
+        font-size: 1.75vw;
         margin: 0 2.5%;
     }
     .introduction {
@@ -333,7 +333,46 @@ body {
         font-size: 2.25vw;
     }
 }
-
+@media (min-width: 992px) {
+    .mainFont {
+        font-size: 2.25vw;
+    }
+    .header {
+        margin-bottom: 2.5%;
+    }
+    .header span {
+        font-size: 3.25vw;
+    }
+    .header img {
+        width: 6.5%;
+    }
+}
+@media (min-width: 992px) and (orientation: portrait) {
+    .mainFont {
+        font-size: 3.25vw;
+    }
+    .header span {
+        font-size: 4.5vw;
+    }
+    .header img {
+        width: 10%;
+    }
+}
+@media (min-width: 1200px) {
+    .mainFont {
+        font-size: 1.5vw;
+    }
+    .header span {
+        font-size: 2.5vw;
+    }
+    .header img {
+        width: 4%;
+    }
+    .channelText {
+        padding: 0 20%;
+        text-align: left;
+    }
+}
 
 /*****************/
 /* About section */
@@ -357,52 +396,21 @@ body {
         margin-bottom: 7.5%;
     }
 }
-@media (min-width: 768px) and (orientation: landscape) {
-
-}
 @media (min-width: 992px) {
-    .mainFont {
-        font-size: 2.25vw;
-    }
-    .header {
-        margin-bottom: 2.5%;
-    }
     .expand p {
         margin-bottom: 5%;
     }
-    .header span {
-        font-size: 3.25vw;
-    }
-    .header img {
-        width: 6.5%;
-    }
 }
 @media (min-width: 992px) and (orientation: portrait) {
-    .mainFont {
-        font-size: 3.25vw;
-    }
-    .header span {
-        font-size: 4.5vw;
-    }
-    .header img {
-        width: 10%;
-    }
     .expand p {
         margin-bottom: 8.5%;
     }
 }
 @media (min-width: 1200px) {
-    .mainFont {
-        font-size: 1.75vw;
-    }
-    .header span {
-        font-size: 2.5vw;
-    }
-    .header img {
-        width: 4%;
+    #about p {
+        margin-bottom: 8%;
     }
 }
-
 /*****************/
 /* Demos section */
 /*****************/
@@ -532,7 +540,32 @@ body {
         margin-bottom: 7.5%;
     }
 }
-
+@media (min-width: 568px) and (orientation: portrait) {
+    #containerPortrait {
+        display: block;
+    }
+    #containerLandscape {
+        display: none;
+    }
+    .demos,
+    .demos div {
+        height: 25vh;
+    }
+    .front p,
+    .back p {
+        font-size: 4vw;
+    }
+}
+@media (min-width: 768px) {
+    #demos .header {
+        margin-bottom: 3%;
+    }
+}
+@media (min-width: 1200px) {
+    .demoText {
+        text-align: left;
+    }
+}
 /*******************/
 /* Contact section */
 /*******************/
@@ -593,6 +626,12 @@ body {
 @media (min-width: 992px) {
     .mediaContacts img {
         width: 8.5%;
+        margin-right: 10%;
+    }
+}
+@media (min-width: 1200px) {
+    .mediaContacts img {
+        width: 7%;
         margin-right: 10%;
     }
 }
