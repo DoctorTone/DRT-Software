@@ -454,7 +454,7 @@ body {
 .front p,
 .back p {
     text-align: center;
-    padding-top: 1%;
+    padding: 1% 5% 0 5%;
 }
 .clickInfo {
     position: absolute;
@@ -498,7 +498,6 @@ body {
     .front p,
     .back p {
         font-size: 3vw;
-        padding: 1%;
     }
     .demoText p {
         margin-bottom: 7.5%;
