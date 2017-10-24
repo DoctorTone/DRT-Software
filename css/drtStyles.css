@@ -9,6 +9,9 @@ body {
 .centred {
     text-align: center;
 }
+.righted {
+    text-align: right;
+}
 .autoCentre {
     margin-right: auto;
     margin-left: auto;
@@ -263,6 +266,7 @@ body {
 .header {
     margin-top: 10px;
     margin-bottom: 2.5%;
+    position: relative;
 }
 .header img {
     width: 15%;
@@ -389,6 +393,9 @@ body {
 /*****************/
 /* About section */
 /*****************/
+#about .header {
+    margin-bottom: -5%;
+}
 #about .fp-tableCell {
     display: block;
 }
@@ -396,6 +403,9 @@ body {
     margin-bottom: 4%;
 }
 @media (min-width: 568px) {
+    #about .header {
+        margin-bottom: -6.5%;
+    }
     #about p {
         margin-bottom: 0%;
     }
