@@ -391,7 +391,7 @@ body {
 }
 @media (min-width: 1200px) {
     .mainFont {
-        font-size: 2vw;
+        font-size: 1.75vw;
     }
     .header span {
         font-size: 2.5vw;
@@ -453,7 +453,7 @@ body {
 }
 @media (min-width: 1200px) {
     #about .header {
-        margin-bottom: 2.5%;
+        margin-bottom: 0.5%;
     }
     #about .header span {
         padding-right: 25px;
