@@ -677,6 +677,10 @@ body {
 #address img {
     width: 12.5%;
 }
+.modal-title,
+.modal-body {
+    color: #333;
+}
 @media (min-width: 568px) {
     #contact .header {
         margin-bottom: 0;

@@ -17,5 +17,9 @@ $(document).ready( () => {
     $('[id^="card"]').on("click", function() {
         $(this).hasClass("flipped") === true ? $(this).removeClass("flipped") : $(this).addClass("flipped");
     });
+
+    $('#phoneContact').on("click", () => {
+        $('#phoneModal').modal();
+    });
 });
 
