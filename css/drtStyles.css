@@ -614,6 +614,13 @@ body {
     #demos .header {
         margin-bottom: 3%;
     }
+
+}
+@media (min-width: 768px) and (orientation: landscape) {
+    .demos,
+    .demos div {
+        height: 50vh;
+    }
 }
 @media (min-width: 1200px) {
     .demoText {
