@@ -391,7 +391,10 @@ body {
 }
 @media (min-width: 1200px) {
     .mainFont {
-        font-size: 1.75vw;
+        font-size: 2.25vw;
+    }
+    .header {
+        margin-bottom: 1%;
     }
     .header span {
         font-size: 2.5vw;
@@ -761,18 +764,18 @@ body {
         margin-top: 0%;
     }
     .mediaContacts img {
-        width: 7.5%;
+        width: 7%;
         margin-right: 7%;
     }
     .mediaContacts {
-        margin-top: -2%;
+        margin-top: 1%;
     }
     #creditsText,
     #creditsImages {
         width: 100%;
     }
     #creditsImages {
-        margin-top: -2.5%;
+        margin-top: 0%;
     }
     #credits p {
         margin-top: 1%;
@@ -793,7 +796,7 @@ body {
 @media (min-width: 992px) {
     .mediaContacts img {
         width: 8.5%;
-        margin-right: 10%;
+        margin-right: 5%;
     }
     #credits {
         margin-bottom: 5%;
@@ -806,7 +809,6 @@ body {
     #contact .header {
         margin-left: 3%;
         margin-top: 1%;
-        margin-bottom: 2%;
     }
     #credits {
         margin-top: 0%;
@@ -819,11 +821,11 @@ body {
         margin-top: 2.5%;
     }
     .mediaContacts {
-        margin-top: 0;
+        margin-top: 2.5%;
     }
     .mediaContacts img {
         width: 7.5%;
-        margin-right: 10%;
+        margin-right: 5%;
     }
     #address p {
         font-size: 1.15vw;
@@ -838,6 +840,6 @@ body {
     }
     .mediaContacts img {
         width: 6%;
-        margin-right: 10%;
+        margin-right: 5%;
     }
 }
