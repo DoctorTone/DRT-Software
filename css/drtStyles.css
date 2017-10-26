@@ -323,6 +323,12 @@ body {
     .header img {
         width: 12%;
     }
+    .largeHeader {
+        font-size: 9vw;
+    }
+    .mediumHeader {
+        font-size: 7.5vw;
+    }
 }
 @media (min-width: 768px) {
     .mainFont {
@@ -337,13 +343,16 @@ body {
     .header img {
         width: 10%;
     }
+    .mediumHeader {
+        font-size: 6vw;
+    }
 }
 @media (min-width: 768px) and (orientation: landscape) {
     .header span {
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
     .header img {
-        width: 7.5%;
+        width: 6%;
     }
     .mainFont {
         font-size: 2.25vw;
@@ -362,6 +371,9 @@ body {
     .header img {
         width: 6.5%;
     }
+    .mediumHeader {
+        font-size: 4.5vw;
+    }
 }
 @media (min-width: 992px) and (orientation: portrait) {
     .mainFont {
@@ -373,10 +385,13 @@ body {
     .header img {
         width: 10%;
     }
+    .mediumHeader {
+        font-size: 5.5vw;
+    }
 }
 @media (min-width: 1200px) {
     .mainFont {
-        font-size: 1.25vw;
+        font-size: 2vw;
     }
     .header span {
         font-size: 2.5vw;
@@ -386,7 +401,14 @@ body {
     }
     .channelText {
         padding: 0 20%;
-        text-align: left;
+    }
+}
+@media (min-width: 1680px) {
+    .mainFont {
+        font-size: 1.5vw;
+    }
+    .mediumHeader {
+        font-size: 3.5vw;
     }
 }
 
@@ -409,10 +431,32 @@ body {
     #about p {
         margin-bottom: 0%;
     }
+    #welcomeText {
+        margin-bottom: 2.5%;
+    }
+}
+@media (min-width: 568px) and (orientation: portrait) {
+    #about .header {
+        margin-bottom: 2.5%;
+    }
+    #welcomeText {
+        margin-bottom: 7.5%;
+    }
+}
+@media (min-width: 992px) {
+    #about .header {
+        margin-bottom: 2.5%;
+    }
+    #welcomeText {
+        margin-bottom: 7.5%;
+    }
 }
 @media (min-width: 1200px) {
     #about .header {
-        margin: 1% 0 1% 3%;
+        margin-bottom: 2.5%;
+    }
+    #about .header span {
+        padding-right: 25px;
     }
     #about p {
         margin-bottom: 2%;
@@ -663,10 +707,20 @@ body {
         margin-top: 5%;
     }
     #credits {
-        margin-bottom: 15%;
+        margin-bottom: 10%;
     }
     #credits img {
-        width: 40%;
+        width: 15%;
+    }
+    #credits p {
+        margin-top: 7.5%;
+    }
+    #creditsText,
+    #creditsImages {
+        width: 100%;
+    }
+    #creditsImages {
+        margin-top: 5%;
     }
     #address {
         margin-top: 5%;
@@ -693,14 +747,30 @@ body {
 }
 @media (min-width: 768px) and (orientation: landscape) {
     .mediaContacts {
-        margin-top: 2%;
+        margin-top: 0%;
     }
     .mediaContacts img {
         width: 7.5%;
         margin-right: 7%;
     }
+    .mediaContacts {
+        margin-top: -2%;
+    }
+    #creditsText,
+    #creditsImages {
+        width: 100%;
+    }
+    #creditsImages {
+        margin-top: -2.5%;
+    }
+    #credits p {
+        margin-top: 1%;
+    }
+    #credits img {
+        width: 10%;
+    }
     #address {
-        margin-top: 3%;
+        margin-top: 1.5%;
     }
     #address p {
         font-size: 1.5vw;
@@ -717,21 +787,31 @@ body {
     #credits {
         margin-bottom: 5%;
     }
+    #address {
+        margin-top: 3%;
+    }
 }
 @media (min-width: 1200px) {
     #contact .header {
         margin-left: 3%;
         margin-top: 1%;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
     }
     #credits {
-        margin-top: 5%;
+        margin-top: 0%;
+        margin-bottom: 2%;
     }
     #credits img {
-        width: 27.5%;
+        width: 12.5%;
+    }
+    #creditsImages {
+        margin-top: 2.5%;
+    }
+    .mediaContacts {
+        margin-top: 0;
     }
     .mediaContacts img {
-        width: 5%;
+        width: 7.5%;
         margin-right: 10%;
     }
     #address p {
@@ -739,5 +819,14 @@ body {
     }
     #address img {
         width: 3%;
+    }
+}
+@media (min-width: 1680px) {
+    #credits img {
+        width: 10%;
+    }
+    .mediaContacts img {
+        width: 6%;
+        margin-right: 10%;
     }
 }
