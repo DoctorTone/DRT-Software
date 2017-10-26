@@ -275,7 +275,7 @@ body {
     padding: 5px;
 }
 .header span {
-    font-size: 6vw;
+    font-size: 6.75vw;
     padding-left: 5px;
 }
 .mainFont {
@@ -678,6 +678,9 @@ body {
     #contact .header {
         margin-bottom: 0;
     }
+    #contact p {
+        margin: 0 0 0.5% 0;
+    }
     .mediaContacts img {
         width: 8%;
         margin-right: 10%;
@@ -686,13 +689,14 @@ body {
         margin-right: 0;
     }
     #credits {
-        margin-bottom: 1%;
+        margin-bottom: 0%;
     }
     #credits img {
         width: 30%;
     }
     #credits p {
         margin-top: 3%;
+        text-align: left;
     }
     #address {
         margin-top: 1%;
