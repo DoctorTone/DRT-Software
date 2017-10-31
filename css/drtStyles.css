@@ -391,7 +391,7 @@ body {
 }
 @media (min-width: 1200px) {
     .mainFont {
-        font-size: 2.25vw;
+        font-size: 1.75vw;
     }
     .header {
         margin-bottom: 1%;
@@ -404,6 +404,9 @@ body {
     }
     .channelText {
         padding: 0 20%;
+    }
+    .mediumHeader {
+        font-size: 3.5vw;
     }
 }
 @media (min-width: 1680px) {
@@ -654,7 +657,7 @@ body {
 #credits {
     margin-bottom: 10%;
 }
-#credits img {
+#creditsImages img {
     width: 20%;
 }
 #credits img:first-child {
@@ -818,8 +821,8 @@ body {
         margin-top: 0%;
         margin-bottom: 2%;
     }
-    #credits img {
-        width: 12.5%;
+    #creditsImages img {
+        width: 9%;
     }
     #creditsImages {
         margin-top: 2.5%;
@@ -828,7 +831,7 @@ body {
         margin-top: 2.5%;
     }
     .mediaContacts img {
-        width: 7.5%;
+        width: 6%;
         margin-right: 5%;
     }
     #address p {
