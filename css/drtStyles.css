@@ -430,6 +430,9 @@ body {
 #about p {
     margin-bottom: 4%;
 }
+#welcomeText {
+    margin-bottom: 15%;
+}
 @media (min-width: 568px) {
     #about .header {
         margin-bottom: -6.5%;
@@ -693,13 +696,13 @@ body {
     }
     .mediaContacts img {
         width: 8%;
-        margin-right: 10%;
+        margin-right: 5%;
     }
     .mediaContacts img:last-child {
         margin-right: 0;
     }
     #credits {
-        margin-bottom: 0%;
+        margin-bottom: 2%;
     }
     #credits img {
         width: 30%;
