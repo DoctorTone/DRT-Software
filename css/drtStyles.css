@@ -577,9 +577,9 @@ body {
     background-image: url("../images/ftse.jpg");
     background-size: 100% 100%;
 }
-#pointsPortrait,
-#pointsLandscape {
-    background-image: url("../images/points.jpg");
+#simulationPortrait,
+#simulationLandscape {
+    background-image: url("../images/simulation.jpg");
     background-size: 100% 100%;
 }
 #timeVizPortrait,
