@@ -492,13 +492,13 @@ body {
 .demoText p {
     margin-bottom: 15%;
 }
-#containerPortrait {
+.containerPortrait {
     display: block;
 }
-#containerLandscape {
+.containerLandscape {
     display: none;
 }
-#containerPortrait .row {
+.containerPortrait .row {
     margin-bottom: 2%;
 }
 .demos {
@@ -588,10 +588,10 @@ body {
     background-size: 100% 100%;
 }
 @media (min-width: 568px) {
-    #containerPortrait {
+    .containerPortrait {
         display: none;
     }
-    #containerLandscape {
+    .containerLandscape {
         display: block;
     }
     .demos,
@@ -607,10 +607,10 @@ body {
     }
 }
 @media (min-width: 568px) and (orientation: portrait) {
-    #containerPortrait {
+    .containerPortrait {
         display: block;
     }
-    #containerLandscape {
+    .containerLandscape {
         display: none;
     }
     .demos,
