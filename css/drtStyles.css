@@ -587,6 +587,21 @@ body {
     background-image: url("../images/timeViz.jpg");
     background-size: 100% 100%;
 }
+#pointCloudPortrait,
+#pointCloudLandscape {
+    background-image: url("../images/points.jpg");
+    background-size: 100% 100%;
+}
+#financePortrait,
+#financeLandscape {
+    background-image: url("../images/finance2.jpg");
+    background-size: 100% 100%;
+}
+#kidsPortrait,
+#kidsLandscape {
+    background-image: url("../images/kids.jpg");
+    background-size: 100% 100%;
+}
 @media (min-width: 568px) {
     .containerPortrait {
         display: none;
