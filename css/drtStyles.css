@@ -602,6 +602,21 @@ body {
     background-image: url("../images/kids.jpg");
     background-size: 100% 100%;
 }
+#animationPortrait,
+#animationLandscape {
+    background-image: url("../images/animation.jpg");
+    background-size: 100% 100%;
+}
+#museumPortrait,
+#museumLandscape {
+    background-image: url("../images/museum.jpg");
+    background-size: 100% 100%;
+}
+#drummingPortrait,
+#drummingLandscape {
+    background-image: url("../images/drumming.jpg");
+    background-size: 100% 100%;
+}
 @media (min-width: 568px) {
     .containerPortrait {
         display: none;
