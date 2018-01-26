@@ -52,9 +52,10 @@ body {
 }
 /* Fonts */
 @font-face {
-    font-family: 'crimson';
-    src: url('../fonts/crimson-italic-webfont.woff') format('woff2'),
-    url('../fonts/crimson-italic-webfont.woff2') format('woff');
+    font-family: 'crimsonitalic';
+    src: url('../fonts/crimson-italic-webfont.woff2') format('woff2'),
+    url('../fonts/crimson-italic-webfont.woff') format('woff'),
+    url('../fonts/crimson-italic-webfont.svg#crimsonitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -451,7 +452,7 @@ body {
     font-size: 6vw;
 }
 .scriptText {
-    font-family: 'crimson';
+    font-family: 'crimsonitalic';
 }
 @media (min-width: 568px) {
     #about .header {
