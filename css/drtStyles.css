@@ -278,7 +278,6 @@ body {
 .header {
     margin-top: 10px;
     margin-bottom: 2.5%;
-    position: relative;
 }
 .header img {
     width: 12.5%;
@@ -575,18 +574,12 @@ body {
     border-radius: 5px;
     padding: 0.5% 1%;
 }
-.containerPortrait {
-    display: block;
+.demoContainer {
+
 }
-.containerLandscape {
-    display: none;
-}
-.containerPortrait .row {
-    margin-bottom: 2%;
-}
-.demos {
-    position: relative;
+.demoContainer div {
     height: 25vh;
+    border-radius: 30px;
 
     -webkit-perspective: 1000px;
     -moz-perspective: 1000px;
@@ -598,17 +591,23 @@ body {
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
 }
+.cards {
+    position: relative;
+    margin-bottom: 2%;
+    width: 65%;
+}
 #demo1 .header {
     margin-bottom: 0;
 }
-.demos div {
-    height: 25vh;
-    background-color: #2c50a2;
-    border-radius: 30px;
+.front,
+.back {
+    position: absolute;
+    top: 0;
+    left: 27.5%;
 }
 .front,
 .back {
-    width: 95%;
+    width: 100%;
 }
 .front,
 .back {
@@ -616,9 +615,6 @@ body {
     backface-visibility: hidden;
     -webkit-transition: -webkit-transform 1.0s;
     transition: transform 1.0s;
-    position: absolute;
-    top: 0%;
-    left: 0;
 }
 .front {
     z-index: 2;
@@ -628,12 +624,13 @@ body {
 .back {
     -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
+    background-color: #2c50a2;
 }
-.demos.flipped .front {
+.cards.flipped .front {
     -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
 }
-.demos.flipped .back {
+.cards.flipped .back {
     -webkit-transform: rotateY(0);
     transform: rotateY(0);
 }
@@ -655,61 +652,61 @@ body {
 .top {
     top: 1%;
 }
-#economicsPortrait,
-#economicsLandscape {
+#economics {
     background-image: url("../images/ftse.jpg");
     background-size: 100% 100%;
 }
-#simulationPortrait,
-#simulationLandscape {
+#simulation {
     background-image: url("../images/simulation.jpg");
     background-size: 100% 100%;
 }
-#timeVizPortrait,
-#timeVizLandscape {
+#timeViz {
     background-image: url("../images/timeViz.jpg");
     background-size: 100% 100%;
 }
-#pointCloudPortrait,
-#pointCloudLandscape {
+#pointCloud {
     background-image: url("../images/points.jpg");
     background-size: 100% 100%;
 }
-#financePortrait,
-#financeLandscape {
+#finance{
     background-image: url("../images/finance2.jpg");
     background-size: 100% 100%;
 }
-#kidsPortrait,
-#kidsLandscape {
+#kids {
     background-image: url("../images/kids.jpg");
     background-size: 100% 100%;
 }
-#animationPortrait,
-#animationLandscape {
+#animation {
     background-image: url("../images/animation.jpg");
     background-size: 100% 100%;
 }
-#museumPortrait,
-#museumLandscape {
+#museum {
     background-image: url("../images/museum.jpg");
     background-size: 100% 100%;
 }
-#drummingPortrait,
-#drummingLandscape {
+#drumming {
     background-image: url("../images/drumming.jpg");
     background-size: 100% 100%;
 }
 @media (min-width: 568px) {
-    .containerPortrait {
-        display: none;
+    .cards {
+        display: inline-block;
+        width: 31%;
     }
-    .containerLandscape {
-        display: block;
+    .demoContainer {
+        text-align: center;
     }
-    .demos,
-    .demos div {
+    .demoContainer div {
         height: 60vh;
+        margin-right: 1%;
+    }
+    .demoContainer div:last-child {
+        margin-right: 0;
+    }
+    .front,
+    .back {
+        width: 100%;
+        left: 0%;
     }
     .front p,
     .back p {
@@ -720,15 +717,16 @@ body {
     }
 }
 @media (min-width: 568px) and (orientation: portrait) {
-    .containerPortrait {
+    .cards {
         display: block;
+        width: 65%;
     }
-    .containerLandscape {
-        display: none;
-    }
-    .demos,
-    .demos div {
+    .demoContainer div {
         height: 25vh;
+    }
+    .front,
+    .back {
+        left: 27.5%;
     }
     .front p,
     .back p {
@@ -759,10 +757,29 @@ body {
     .demoText p {
         margin-bottom: 12.5%;
     }
+    .cards {
+        width: 55%;
+    }
+    .front,
+    .back {
+        left: 37.5%;
+    }
 }
 @media (min-width: 992px) {
     .demoText p {
         margin-bottom: 10%;
+    }
+    .demoContainer div {
+        height: 50vh;
+    }
+}
+@media (min-width: 992px) and (orientation: portrait) {
+    .demoContainer div {
+        height: 25vh;
+    }
+    .front,
+    .back {
+        left: 37.5%;
     }
 }
 @media (min-width: 1200px) {
@@ -983,5 +1000,23 @@ body {
     .mediaContacts img {
         width: 6%;
         margin-right: 5%;
+    }
+}
+
+.layoutTest div {
+    margin-top: 2%;
+}
+.layoutTest img {
+    width: 75%;
+}
+@media (orientation: landscape) {
+    #layout {
+        text-align: left;
+    }
+    .layoutTest div {
+        display: inline;
+    }
+    .layoutTest img {
+        width: 30%;
     }
 }

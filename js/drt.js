@@ -15,7 +15,7 @@ $(document).ready( () => {
         scrollOverflow: true
     });
 
-    $('[id^="card"]').on("click", function() {
+    $('.cards').on("click", function() {
         $(this).hasClass("flipped") === true ? $(this).removeClass("flipped") : $(this).addClass("flipped");
     });
 
