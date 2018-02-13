@@ -22,6 +22,40 @@ body {
 .indent {
     margin: 0 2%;
 }
+.fitInline {
+    display: inline-block;
+}
+.animateBounce {
+    width: 12.5%;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bouncy;
+}
+@keyframes bouncy {
+    0% {
+        transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+    }
+}
+@-webkit-keyframes bouncy {
+    0% {
+        -webkit-transform: translateY(-10px);
+    }
+    50% {
+        -webkit-transform: translateY(-30px);
+    }
+    100% {
+        -webkit-transform: translateY(-10px);
+    }
+}
 .three-tenths {
     position: relative;
     min-height: 1px;
@@ -92,7 +126,7 @@ body {
     margin-top: 0.5%;
 }
 #detailText img {
-    width: 10%;
+    width: 100%;
 }
 .introduction {
     font-size: 10vw;
@@ -119,10 +153,6 @@ body {
 }
 #footer img {
     width: 8%;
-}
-.tight p {
-    margin: 0;
-    padding: 0;
 }
 /* Media queries */
 @media (min-width: 568px) {
@@ -162,6 +192,9 @@ body {
     #footer img {
         width: 35%;
     }
+    .animateBounce {
+        width: 6.5%;
+    }
 }
 @media (min-width: 568px) and (orientation: portrait) {
     #logoContainer {
@@ -188,6 +221,9 @@ body {
     }
     .explanation {
         font-size: 3.5vw;
+    }
+    .animateBounce {
+        width: 7%;
     }
 }
 @media (min-width: 768px) {
@@ -229,6 +265,9 @@ body {
     .explanation {
         font-size: 1.5vw;
     }
+    .animateBounce {
+        width: 5%;
+    }
 }
 @media (min-width: 992px) {
     .navigation li img {
@@ -239,6 +278,9 @@ body {
     }
     #introText {
         margin: 3% 0 3.5% 25%;
+    }
+    .animateBounce {
+        width: 4%;
     }
 }
 @media (min-width: 992px) and (orientation: portrait) {
